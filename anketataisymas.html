@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registracija taisymui</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="anketataisymas.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+
+	<div id="page">
+		<div id="header">
+			<img id="background" src="images/carcover.jpg">
+			<ul class="nav">
+				<li>
+					<a href="pagrindinis.html">
+						<img id="logo" src="images/carlogo.png">
+					</a>
+				</li>
+				<li>
+					<a href="pagrindinis.html">
+						<div>Pagrindinis</div><hr class="selector">
+					</a>
+				</li>
+				<li>
+					<a href="anketapagrindinis.html">
+						<div>Registruotis</div><hr class="active">
+					</a>
+				</li>
+				<li>
+					<a href="Kontaktai.html">
+						<div>Kontaktai</div><hr class="selector">
+					</a>
+				</li>
+			</ul>
+			<p id="about">Registracija taisymui</p>
+		</div>
+		<a href="anketapagrindinis.html"><img src="images/arrow.png" id="back"></a>
+		<div id="forma">
+			<div id="wrapper">
+			<form>
+				<fieldset>
+					<legend>Asmeninė informacija</legend>
+					<table>
+						<tr>
+							<td><p>Jūsų vardas:</p></td>
+							<td><input type="text" id="vardas" name="vardas" required></td>
+						</tr>
+						<tr>
+							<td><p>Jūsų pavardė:</p></td>
+							<td><input type="text" id="pavarde" name="pavarde" required></td>
+						</tr>
+						<tr>
+							<td><p>Jūsų amžius:</p></td>
+							<td><input type="text" name="amzius" id="amzius" required></td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<legend>Kontaktinė informacija</legend>
+					<table>
+						<tr>
+							<td><p>Jūsų tel. numeris:</p></td>
+							<td><input type="text" name="numeris" id="numeris"></td>
+						</tr>
+						<tr>
+							<td><p>Jūsų el. paštas:</p></td>
+							<td><input type="text" name="pastas" id="pastas"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<legend>Taisymo detalės</legend>
+					<table>
+						<tr>
+							<td><p>Taisymas:</p></td>
+							<td id="pasirinkimai"><input type="checkbox" value="kebulo" name="taisymas">Viso kėbulo dažymas<br>
+								<input type="checkbox" value="detaliu" name="taisymas">Atskirų detalių taisymas/dažymas<br>
+								<input type="checkbox" value="Paruošimas techninei apžiūrai" name="taisymas">Paruošimas techninei apžiūrai<br>
+								<input type="checkbox" value="Paruošimas techninei apžiūrai" name="taisymas">Remonto taisymas<br>
+							</td>
+						</tr>
+						<tr>
+							<td><p>Auto. modelis:</p></td>
+							<td><select name="miestas">
+								<option value="Audi">Audi</option>
+								<option value="BMW">BMW</option>
+								<option value="Opel">Opel</option>
+								<option value="Renault">Renault</option>
+								<option value="Mercedes">Mercedes</option>
+								<option value="Walkswagen">Walkswagen</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><p>Valstybinis numeris:</p></td>
+						<td><input type="text" name="gatve" id="gatve"></td>
+					</tr>							
+				</table>
+			</fieldset>
+			<input type="submit" value="Registruotis" class="mygtukas">
+			<input type="reset" value="Atšaukti" class="mygtukas">
+		</form>
+		</div>
+	</div>
+
+		<div id="footer">
+			<hr id="un">
+			<address>
+				2017 &copy; Tomas Rimkus
+			</address>
+		</div>
+
+	</div>
+
+</body>
+</html>

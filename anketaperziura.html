@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registracija peržiūrai</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="anketaperziura.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<img id="background" src="images/carcover.jpg">
+			<ul class="nav">
+				<li>
+					<a href="pagrindinis.html">
+						<img id="logo" src="images/carlogo.png">
+					</a>
+				</li>
+				<li>
+					<a href="pagrindinis.html">
+						<div>Pagrindinis</div><hr class="selector">
+					</a>
+				</li>
+				<li>
+					<a href="anketapagrindinis.html">
+						<div>Registruotis</div><hr class="active">
+					</a>
+				</li>
+				<li>
+					<a href="Kontaktai.html">
+						<div>Kontaktai</div><hr class="selector">
+					</a>
+				</li>
+			</ul>
+			<p id="about">Registracija apžiūrai</p>
+		</div>
+		<a href="anketapagrindinis.html"><img src="images/arrow.png" id="back"></a>
+		<div id="forma">
+			
+			<div id="wrapper">
+			<form>
+				<fieldset>
+					<legend>Asmeninė informacija</legend>
+					<table>
+						<tr>
+							<td><p>Jūsų vardas:</p></td>
+							<td><input type="text" id="vardas" name="vardas" required></td>
+						</tr>
+						<tr>
+							<td><p>Jūsų pavardė:</p></td>
+							<td><input type="text" id="pavarde" name="pavarde" required></td>
+						</tr>
+						<tr>
+							<td><p>Jūsų amžius:</p></td>
+							<td><input type="text" name="amzius" id="amzius" required></td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<legend>Kontaktinė informacija</legend>
+					<table>
+						<tr>
+							<td><p>Jūsų tel. numeris:</p></td>
+							<td><input type="text" name="numeris" id="numeris"></td>
+						</tr>
+						<tr>
+							<td><p>Jūsų el. paštas:</p></td>
+							<td><input type="text" name="pastas" id="pastas"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<legend>Apžiūros adresas</legend>
+					<table>
+						<tr>
+							<td><p>Apžiūra vyks:</p></td>
+							<td id="pasirinkimas"><input type="radio" value="manoadresu" name="adresu">Mano nurodytu adresu <br>
+								<input type="radio" value="servisoadresu" name="adresu">Servise</td>
+							</tr>
+							<tr>
+								<td><p>Miestas:</p></td>
+								<td><select name="miestas">
+									<option value="Vilnius">Vilnius</option>
+									<option value="Kaunas">Kaunas</option>
+									<option value="Klaipėda">Klaipėda</option>
+									<option value="Panevežys">Panevežys</option>
+									<option value="Šiauliai">Šiauliai</option>
+									<option value="Telšiai">Telšiai</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><p>Gatvė:</p></td>
+							<td><input type="text" name="gatve" id="gatve"></td>
+						</tr>
+						<tr>
+							<td><p>Namo-Buto nr:</p></td>
+							<td><input type="text" name="butas" id="butas"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<input type="submit" value="Registruotis" class="mygtukas">
+				<input type="reset" value="Atšaukti" class="mygtukas">
+			</form>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<hr id="un">
+			<address>
+				2017 &copy; Tomas Rimkus
+			</address>
+		</div>
+
+	</div>
+</body>
+</html>

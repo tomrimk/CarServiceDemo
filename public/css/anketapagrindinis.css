@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto slab', serif;
+}
+
+#footer {
+    /*background-color: #60A3F0;*/
+    color: white;
+}
+
+body {
+    /*background-color: #3F83BA;*/
+    background-color: #006FC9;
+}
+
+#header {
+    filter: drop-shadow(0 0px 5px black);
+}
+
+#un {
+    border-width: 1px;
+    max-width: 100%;
+    visibility: visible;
+}
+
+address {
+    text-align: center;
+    padding: 10px;
+}
+
+#background {
+    height: 300px;
+    width: 100%;
+    filter: brightness(70%);
+    display:block;
+}
+
+#nav {
+    position: absolute;
+    top:30px;
+    left: 600px;
+}
+
+.nav li{
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    font-size: 2em; 
+}
+
+ul{
+    position: absolute;
+    top: 20px;
+    left: 800px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#logo {
+    max-height: 60px;
+    max-width: 200px;
+}
+
+hr {
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+    color: orange;  
+}
+
+a:hover .selector {
+    visibility: visible;
+    color: #F0A32F;
+}
+
+#about {
+    font-size: 3.4em;
+    position: absolute;
+    max-width:600px;
+    color: white;
+    top: 55px;
+    left: 56px;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+}
+
+#taisymas{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 550px;
+}
+
+#taisymas p {
+    position: absolute;
+    top: 555px;
+    left: 130px;
+    font-size: 2em;
+}
+
+#carper {
+    filter: brightness(55%) drop-shadow(0 1px 5px black);
+    display: block;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+a p:hover {
+    text-decoration: underline;
+
+}
+
+#perziura {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    height: 550px;
+}
+
+#carrepair {
+    filter: brightness(55%) drop-shadow(0 1px 5px black);
+    display: block;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    margin-top: 50px
+}
+
+#perziura p {
+    position: absolute;
+    top: 555px;
+    left: 920px;
+    font-size: 2em;
+}
