@@ -8,10 +8,6 @@
   padding: 0 !important;
 }
 
-a {
-  text-decoration: none !important;
-}
-
 .row {
   margin: 0 !important;
 }
@@ -28,7 +24,7 @@ a {
 }
 
 #footer {
-  background-color: inherit;
+  background-color: rgb(8, 80, 236);
   color: white;
 }
 
@@ -49,7 +45,7 @@ a {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: white !important;
   text-align: center;
 }
@@ -96,12 +92,6 @@ address {
   padding: 25px;
 }
 
-#un {
-  border: 1px solid white;
-  max-width: 100%;
-  visibility: visible;
-}
-
 #content1 {
   width: 100%;
   height: 360px;
@@ -126,6 +116,7 @@ address {
 #aboutable td {
   max-width: 350px;
 }
+
 #aboutable {
   margin: auto;
   padding: 10px;
@@ -178,12 +169,6 @@ address {
   margin-top: 10px;
   margin-left: 10px;
   padding: 20px;
-}
-
-#reg {
-  font-size: 2em;
-  margin-left: 50px;
-  margin-top: 10px;
 }
 
 #content3 {
@@ -287,7 +272,6 @@ address {
 /* CONTACTCSS */
 .contact {
   margin-top: 50px !important;
-  margin-bottom: 50px !important;
 }
 
 .contact div {
