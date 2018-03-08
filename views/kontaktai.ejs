@@ -1,58 +1,68 @@
 <% include ./partials/header %>
-			<p class="pav">Kontaktiniai duomenys</p>
+			<p class="about">Kontaktiniai duomenys</p>
 		</div>
-		<div id="content">
-
-			<table id="info">
-				<tr>
-					<td>
-						<img src="images/houselogo.png">
-					</td>
-					<td>
-						<p>Liepų g. 29, Gindulių k., Klaipėdos raj. sav.</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="images/phone.png">
-					</td>
-					<td>
-						<p>+370 6 900 6941</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="images/userlogo.png">
-					</td>
-					<td>
-						<p>Tomas Rimkus</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="images/maillogo.png">
-					</td>
-					<td>
-						<p>rimk.tom@info.lt</p>
-					</td>
-				</tr>
-			</table>
-
-			<form id="contact">
-				<table>
+		<div class="row contact">
+			<div class="col-12">
+				
+			<div id="content">
+				<table id="info">
 					<tr>
-						<td>Jūsų el. paštas:<br>
-						<input type="text" name="pastas" placeholder="El. paštas" size="28"></td>
+						<td>
+							<img src="images/houselogo.png">
+						</td>
+						<td>
+							<p>Vilnius, Lietuva</p>
+						</td>
 					</tr>
 					<tr>
-						<td  id="myg" colspan="2"><textarea rows="4" placeholder="Įveskite tekstą" cols="50" required></textarea></td>
+						<td>
+							<img src="images/phone.png">
+						</td>
+						<td>
+							<p>+370 6 900 6941</p>
+						</td>
 					</tr>
 					<tr>
-						<td><input type="submit" value="Siųsti laišką"></td>
+						<td>
+							<img src="images/userlogo.png">
+						</td>
+						<td>
+							<p>Tomas Rimkus</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/maillogo.png">
+						</td>
+						<td>
+							<p>rimk.tom@gmail.com</p>
+						</td>
 					</tr>
 				</table>
-			</form>
+			</div>
+			<div class="cont">
+				<hr class="cohr">
+				<h2 id="radimas">Mus rasite</h2>
+				<hr class="cohr">
+			</div>
+		<div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+				const vilnius = {lat: 54.690956, lng: 25.263475}
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: vilnius,
+          zoom: 14
+        });
+				var marker = new google.maps.Marker({
+          position: vilnius,
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhyPkRPdHuHn7yWrOWgc9Ghzqq6IDPRBQ&callback=initMap"
+    async defer></script>
 		</div>
-			<img id="map" src="images/map.png">
+	</div>
 
 <%include ./partials/footer %>
